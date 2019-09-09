@@ -9,7 +9,10 @@ In this repo you will find the following files:
 - train.py: training script of a GloVe model on the pre-processed corpora. 
 
 ### Overview 
+
 The training of a multi-token GloVe model can be separated into three parts: 1) Data acquisition of pre-trained corpora. 2) Data pre-processing and engineering, which involves tokenizing the corpora and adding underscore between multigram words, forcing the machine to treat them as a single vector. 3) Model training, which is basically running the python script on the pre-processed corpora. I used Wikipedia 2010 dump for the model training.
+
+![alt text](https://github.com/Katherine511/URAP_Research/blob/master/architecture.png)
 
 Running a few word similarity task on the HPC cluster will yield the following results. The numbers in the parentheses are the Euclidean distance between two word vectors, which provides an effective method for measuring the linguistic or semantic similarity of the corresponding words. 
 
